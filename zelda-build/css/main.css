@@ -29,6 +29,9 @@ header {
 
 /* main rules here */
 #character_nav {
+
+    padding-bottom: 300px;
+
     text-align: center;
     background-color: #38b6f1;
 
@@ -101,11 +104,12 @@ article p {
     background-image: url('../images/zeldaSprites.png');
 }
 
-#link { background-position: -150px 0; }
-#zelda { background-position: -300px 0; }
-#urbosa { background-position: -450px 0; }
-#mipha { background-position: -600px 0; }
-#revali { background-position: -750px 0; }
+#link { background-position: 0px 0; }
+#zelda { background-position: -150px 0; }
+#urbosa { background-position: -300px 0; }
+#mipha { background-position: -450px 0; }
+#revali { background-position: -600px 0; }
+#daruk { background-position: -750px 0; }
 
 .sprite:hover { background-position-y: -150px !important; }
 
