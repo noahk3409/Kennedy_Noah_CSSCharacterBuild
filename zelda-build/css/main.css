@@ -44,12 +44,11 @@ header {
 
 
 .characters { 
-    
     display:flex;
     flex-wrap: wrap;
  }
 
-.characters div { 
+.character_box { 
     position: relative;
     display: inline-block;
     height: 220px;
@@ -75,10 +74,7 @@ header {
     width: 100%;
     height: 6px;
     background-color: rgb(0, 125, 255);
-
     transition: height 0.2s ease;
-
-    position: absolute;
 }
 
 .characters div:hover .blue_bumper { height: 70px; }
