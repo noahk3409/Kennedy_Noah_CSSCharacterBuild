@@ -19,9 +19,7 @@ body {
 
 /* main header rules */
 header {
-    background-color: rgb(30, 130, 235);
-    position: sticky;
-    top: 0;
+    background-color: rgb(0, 125, 250);
     text-align: center;
 }
 
@@ -30,15 +28,13 @@ header {
 /* main rules here */
 #character_nav {
 
-    padding-bottom: 300px;
+    padding-bottom: 150px;
 
     text-align: center;
-    background-color: #38b6f1;
-
+    background-color: #38b6f19f;
     background-image: url('../images/zelda_background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-
     background-blend-mode: multiply;
 }
 
@@ -48,7 +44,7 @@ header {
     flex-wrap: wrap;
     align-items:center;
     justify-content: center;
-    max-width:1080px;
+    max-width: 1000px;
     margin: auto;
  }
 
@@ -57,9 +53,7 @@ header {
     display: inline-block;
     height: 220px;
     margin: 10px 8px;
-
     background-color: black;
-
     text-align: left;
     cursor: pointer;
 }
@@ -79,7 +73,7 @@ header {
 .blue_bumper {
     width: 100%;
     height: 6px;
-    background-color: rgb(0, 125, 255);
+    background-color: rgb(0, 125, 250);
     transition: height 0.2s ease;
 }
 
@@ -159,14 +153,16 @@ footer {
     background-repeat: no-repeat;
 
     background-size: 55vh; /* 55% of the viewport height */
-    background-position: 40px bottom;
+    background-position: 40px center;
 
     z-index: 5000;
 
     display: none;
 }
 
-#lightbox2 { background-image: url('../images/zelda.png'); }
+#lightbox2 { background-image: url('../images/zelda.png'); 
+    background-position: 40px center;
+}
 
 .lightbox_close {
     position: relative;
@@ -181,7 +177,7 @@ footer {
     font-weight: bolder;
 }
 
-.lightbox_close:hover { opacity: 0.5; color: rgb(0, 125, 255)0000; }
+.lightbox_close:hover { opacity: 0.5; color: rgb(0, 125, 255); }
 
 .lightbox article {
     width: 55%;
