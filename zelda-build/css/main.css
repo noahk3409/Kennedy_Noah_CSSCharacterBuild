@@ -19,7 +19,7 @@ body {
 
 /* main header rules */
 header {
-    background-color: rgb(0, 125, 255);
+    background-color: rgb(30, 130, 235);
     position: sticky;
     top: 0;
     text-align: center;
@@ -42,9 +42,14 @@ header {
     background-blend-mode: multiply;
 }
 
-.characters { list-style-type: none; }
 
-.characters li { 
+.characters { 
+    
+    display:flex;
+    flex-wrap: wrap;
+ }
+
+.characters div { 
     position: relative;
     display: inline-block;
     height: 220px;
@@ -56,7 +61,7 @@ header {
     cursor: pointer;
 }
 
-.characters li h5 {
+.characters div h5 {
     position: relative;
     color: white;
     padding: 12px 8px;
@@ -64,7 +69,7 @@ header {
     z-index: 500;
 }
 
-.characters li a { text-decoration: none; }
+.characters div a { text-decoration: none; }
 
 .blue_bumper {
     width: 100%;
@@ -76,7 +81,7 @@ header {
     position: absolute;
 }
 
-.characters li:hover .blue_bumper { height: 70px; }
+.characters div:hover .blue_bumper { height: 70px; }
 
 article { padding: 20px; }
 
@@ -101,7 +106,12 @@ article p {
     width: 150px;
     height: 150px;
     
-    background-image: url('../images/zeldaSprites.png');
+}
+
+.character-img {
+    width: 150px;
+    height: 150px;
+    margin: auto;
 }
 
 #link { background-position: 0px 0; }
